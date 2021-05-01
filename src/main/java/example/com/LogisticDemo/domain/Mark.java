@@ -1,4 +1,4 @@
-package com.example.LogisticDemo.domain;
+package example.com.LogisticDemo.domain;
 
 import lombok.Data;
 

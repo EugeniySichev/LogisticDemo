@@ -11,9 +11,9 @@ define(function() {
             {
                 view: 'list',
                 data: [
-                    'test1',
-                    'test2',
-                    'test3'
+                    'audi q7',
+                    'bmw x7',
+                    'uaz patriot'
                 ]
             }
         ]
