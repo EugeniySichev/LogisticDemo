@@ -1,7 +1,7 @@
 define(['component/listPage'], function(listPage) {
     return listPage(
-        'carList',
-        'resource->/api/car',
+        'markList',
+        'resource->/api/mark',
         [
             { id: "name", editor: "text" }
         ]
