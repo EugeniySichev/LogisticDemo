@@ -1,7 +1,7 @@
-package example.com.LogisticDemo.controller;
+package com.example.LogisticDemo.controller;
 
-import example.com.LogisticDemo.domain.Mark;
-import example.com.LogisticDemo.repo.MarkRepo;
+import com.example.LogisticDemo.domain.Mark;
+import com.example.LogisticDemo.repo.MarkRepo;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

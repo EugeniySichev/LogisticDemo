@@ -1,7 +1,7 @@
-package example.com.LogisticDemo.controller;
+package com.example.LogisticDemo.controller;
 
-import example.com.LogisticDemo.domain.Car;
-import example.com.LogisticDemo.repo.CarRepo;
+import com.example.LogisticDemo.domain.Car;
+import com.example.LogisticDemo.repo.CarRepo;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

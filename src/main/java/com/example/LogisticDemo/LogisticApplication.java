@@ -1,13 +1,13 @@
-package example.com.LogisticDemo;
+package com.example.LogisticDemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LogisticDemoApplication {
+public class LogisticApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LogisticDemoApplication.class, args);
+		SpringApplication.run(LogisticApplication.class, args);
 	}
 
 }

@@ -1,21 +1,10 @@
-define(function() {
-    return {
-        rows: [
-            {
-                view: 'button',
-                label: 'Main',
-                click: function() {
-                    routie('')
-                }
-            },
-            {
-                view: 'list',
-                data: [
-                    'audi q7',
-                    'bmw x7',
-                    'uaz patriot'
-                ]
-            }
+define(['component/listPage', 'collections/models'], function(listPage, models) {
+    return listPage(
+        'carList',
+        'resource->/api/car',
+        [
+            { id: 'name', editor: 'text' },
+            { id: 'model', editor: 'combo', options: models }
         ]
-    }
+    )
 })
