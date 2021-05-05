@@ -1,10 +1,16 @@
-define(['component/listPage', 'collections/models'], function(listPage, models) {
+define(['component/listPage'], function(listPage) {
     return listPage(
         'carList',
         'resource->/api/car',
         [
             { id: 'name', editor: 'text' },
-            { id: 'model', editor: 'combo', options: models }
+            {
+                id: 'model',
+                dialogUrl: 'views/model/modelDialog',
+                template: function(row) {
+                    return row.model && row.model.repr || ''
+                }
+            }
         ]
     )
 })

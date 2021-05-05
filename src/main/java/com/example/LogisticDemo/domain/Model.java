@@ -1,9 +1,10 @@
 package com.example.LogisticDemo.domain;
 
-import com.example.LogisticDemo.util.EntityIdResolver;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonIdentityReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+import com.example.LogisticDemo.util.EntityIdResolver;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -25,6 +26,12 @@ public class Model implements ComboListItem {
     @ManyToOne
     @JsonIdentityReference(alwaysAsId = true)
     private Mark mark;
+
+    @Override
+    @JsonIgnore
+    public String getRepr() {
+        return String.format("%s %s", mark.getName(), name);
+    }
 
 	@Override
 	public Long getId() {
